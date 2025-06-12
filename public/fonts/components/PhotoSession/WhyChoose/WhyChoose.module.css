@@ -1,0 +1,23 @@
+.whyChoose {
+    padding-top: 150px;
+    padding-bottom: 220px;
+    text-align: center; 
+}
+
+.title {
+    font-family: 'ArsenalBold';
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: 100px;
+}
+
+.Grid {
+    display: grid;
+    grid-template-columns: repeat(3, 538px);
+    grid-template-rows: repeat(2, 230px);
+    column-gap: 53px;
+    row-gap: 80px; 
+    margin: 0 auto;
+    justify-content: center;                
+    align-items: center; 
+}

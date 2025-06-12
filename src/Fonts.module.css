@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Arsenal';
+    src: url('../public/fonts/ArsenalSC-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ArsenalBold';
+    src: url('../public/fonts/ArsenalSC-Bold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}

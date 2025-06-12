@@ -1,0 +1,63 @@
+.services {
+  background: #46191E;
+  color: #fff;
+  font-family: 'Arsenal';
+  padding: 60px 100px;
+}
+
+.title {
+  font: 48px 'ArsenalBold';
+  text-align: center;
+  margin: 0 0 45px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 35px;
+  justify-items: center;
+}
+
+.Line {
+  height: 2px;
+  background: #fff;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.text {
+  font: 36px 'ArsenalBold';
+  margin: 0 0 10px 0;
+}
+
+.note {
+  font-size: 24px;
+  text-align: left;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .services {
+    padding: 59px 15px;
+  }
+
+  .title {
+    font-size: 32px;
+    margin-bottom: 45px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .text {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  .note {
+    font-size: 16px;
+  }
+}

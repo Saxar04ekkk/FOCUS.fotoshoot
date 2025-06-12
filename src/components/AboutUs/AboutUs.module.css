@@ -1,0 +1,50 @@
+.about {
+    background-color: #46191E;
+    color: #fff;
+    font-family: 'Arsenal';
+    padding: 154px 100px;
+    text-align: center;
+}
+
+.title {
+    font-family: 'ArsenalBold';
+    font-size: 98px;
+    margin-bottom: 40px;
+}
+
+.text {
+    font-size: 40px;
+    max-width: 1352px;
+    margin: 0 auto 30px;
+    line-height: 1.5;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px 116px;
+    margin-top: 240px;
+}
+
+@media (max-width: 600px) {
+  .about {
+    padding: 50px 15px;
+  }
+
+  .title {
+    font-size: 48px;
+    margin-bottom:25px;
+  }
+
+  .text {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .team {
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 80px;
+  }
+}

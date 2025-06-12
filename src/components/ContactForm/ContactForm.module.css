@@ -1,0 +1,164 @@
+.contact {
+    background-color: #46191E;
+    color: #fff;
+    font-family: 'Arsenal';
+    padding: 85px 20px;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Arsenalbold';
+    font-size: 48px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.subtitle {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 688px;
+    margin: 0 auto;
+}
+
+.input {
+    padding: 18px 24px;
+    border-radius: 50px;
+    border: none;
+    font-size: 24px;
+    font-family: 'Arsenal';
+    transition: box-shadow 0.3s;
+}
+
+.checkboxWrapper {
+    font-size: 16px;
+    display: flex;
+    gap: 10px;
+    color: #fff;
+    text-decoration: underline;
+    margin-bottom: 25px;
+}
+
+.checkboxWrapper input[type="checkbox"] {
+    margin-top: 0px;
+    width: 22px;
+    height: 22px;
+    accent-color: #ffffff00;
+}
+
+.btn {
+    margin-right: 35px;
+    width: 100%;
+    height: 86px;
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+.modalOverlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background-color: #46191E;
+    padding: 30px 40px;
+    border-radius: 16px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.modal p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.modalButton {
+    font-family: 'ArsenalBold';
+    padding: 10px 20px;
+    background-color: #ffffff00;
+    border: 2px solid #fff;
+    color: #ffffff;
+    width: 200px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 24px;
+    transition: background-color 0.3s;
+}
+
+.modalButton:active {
+    background-color: #ffffff;
+    color: #000;
+}
+
+@media (max-width: 600px) {
+    .contact {
+        padding: 60px 15px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .form {
+        gap: 6px;
+    }
+
+    .input {
+        padding: 9px 18px;
+        font-size: 16px;
+        border-radius: 25px;
+    }
+
+    .checkboxWrapper {
+    margin-top: 10px;
+    font-size: 11px;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    text-align: left;
+}
+
+
+    .checkboxWrapper input[type="checkbox"] {
+        width: 12px;
+        height: 12px;
+    }
+
+    .btn {
+        height: 64px;
+        font-size: 28px;
+        margin-right: 0;
+        border: 2px solid white;
+    }
+
+    .modal {
+        padding: 24px;
+        max-width: 100%;
+        height: 150px;
+    }
+
+    .modal p {
+        font-size: 18px;
+    }
+
+    .modalButton {
+        font-size: 18px;
+        width: 70%;
+    }
+}

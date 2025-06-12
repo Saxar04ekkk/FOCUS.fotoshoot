@@ -1,0 +1,57 @@
+.step {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 40px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.left {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.right {
+  flex-direction: row;
+  text-align: left;
+}
+
+.circleWrapper {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  color: #46191E;
+  border-radius: 50%;
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  max-width: 500px;
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}

@@ -1,0 +1,76 @@
+.wrapper {
+  position: relative;
+  font-size: 24px;
+  font-family: 'Arsenal';
+}
+
+.selected {
+  padding: 18px 24px;
+  border-radius: 50px;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  background-image: url('/public/img/45.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.rotate {
+  transform: scaleY(-1);
+}
+
+.options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 8px;
+  background: #fff;
+  color: #000;
+  border-radius: 25px;
+  list-style: none;
+  padding: 0;
+  box-shadow: 0 4px 12px rgba(168, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.options li {
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.options li:hover {
+  background-color: #966369;
+  border-radius: 50px;
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+        font-size: 16px;
+  }
+
+  .selected {
+    padding: 9px 18px;
+    border-radius: 25px;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .options li {
+    padding: 10px ;
+    font-size: 16px;
+  }
+}

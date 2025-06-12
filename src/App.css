@@ -1,0 +1,7 @@
+.site-wrapper {
+    font-family: 'Arsenal';
+    max-width: 100vw;
+    overflow-x: hidden;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}

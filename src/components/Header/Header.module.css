@@ -1,0 +1,98 @@
+.header {
+    background-color: #2D1114;
+    padding: 3px 100px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    position: relative;
+    z-index: 1000;
+}
+
+.header img {
+    height: 74px;
+}
+
+.nav {
+    font-family: 'ArsenalBold', sans-serif;
+    font-size: 20px;
+    display: flex;
+    gap: 50px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.hamburger,
+.closeButton {
+    display: none;
+    width: 30px;
+    height: 40px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.hamburger img,
+.closeButton img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding-left: 15px;
+        padding-right: 15px;
+            height: 50px;
+    }
+
+    .header img {
+        height: 40px;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background-color: #2D1114;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 10px 15px;
+        font-size: 24px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 999;
+    }
+
+    .nav.open {
+        transform: translateX(0%);
+    }
+
+    .hamburger {
+        display: flex;
+        height: 40px;
+    }
+
+    .closeButton {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        width: 30px;
+        height: 40px;
+        justify-content: center;
+        align-self: flex-end;
+        margin-top: 0;
+    }
+}

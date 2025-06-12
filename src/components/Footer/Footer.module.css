@@ -1,0 +1,113 @@
+.footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Arsenal';
+    padding: 50px 100px;
+    box-sizing: border-box;
+    gap: 110px; 
+}
+
+.footerLogo {
+    width: 74px;
+    flex-shrink: 0;
+}
+
+.footerMenu {
+    display: flex;
+    gap: 190px;
+    flex-grow: 1;
+}
+
+.menuLinks,
+.menuContact {
+    display: flex;
+    flex-direction: column;
+}
+
+.menuLinks h4,
+.menuContact h4 {
+    margin: 0 0 10px 0; 
+    font-size: 24px;
+}
+
+.menuLinks a,
+.menuContact p {
+    margin: 4px 0;
+    color: #ccc;
+    transition: color 0.3s ease;
+    font-size: 20px;
+}
+
+.menuLinks a {
+    text-decoration: none;
+}
+
+.menuLinks a:hover {
+    color: #fff;
+}
+
+.footerSocial {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.socialIcon {
+    width: 50px;
+    height: 50px;
+}
+
+
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        padding: 30px 15px;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .footerLogo {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+        margin: 30px;
+    }
+
+    .footerMenu {
+        flex-direction: column;
+        gap: 15px;
+        margin-left: 0;
+    }
+
+    .menuLinks h4,
+    .menuContact h4 {
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    .menuLinks a,
+    .menuContact p {
+        font-size: 20px;
+        color: #ffffff85;
+    }
+
+    .footerSocial {
+        position: absolute;
+        bottom: 30px;
+        right: 15px;
+        display: flex;
+        gap: 28px;
+        padding-right: 0;
+        align-items: flex-end;
+    }
+
+    .socialIcon {
+        width: 40px;
+        height: 40px;
+    }
+}
