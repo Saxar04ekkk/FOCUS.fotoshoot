@@ -17,12 +17,12 @@ const App = () => {
         <Header />
         <div className='site-wrapper-content'>
           <Routes>
-            <Route path="/" element={<PhotoSession />} />
             <Route path="/PhotoSession" element={<PhotoSession />} />
             <Route path="/AboutUs" element={<AboutUs />} />
             <Route path="/Services" element={<Services />} />
             <Route path="/Portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<ContactForm />} />
+            <Route path="/" element={<PhotoSession />} />
           </Routes>
         </div>
         <Footer />
