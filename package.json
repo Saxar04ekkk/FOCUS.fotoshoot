@@ -2,7 +2,7 @@
   "name": "photoshoot",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://saxar04ekkk.github.io/FOCUS.fotoshoot/",
+  "homepage": "https://saxar04ekkk.github.io/FOCUS.fotoshoot",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
