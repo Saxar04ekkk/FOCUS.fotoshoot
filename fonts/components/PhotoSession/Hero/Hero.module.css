@@ -1,0 +1,54 @@
+.container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.text h1 {
+    max-width: 976px;
+    font-family: 'ArsenalBold';
+    font-size: 64px;
+    margin-bottom: -20px
+}
+
+.text p {
+    font-size: 32px;
+    margin-bottom: 80px;
+}
+
+.btn {
+    font-family: 'ArsenalBold';
+    width: 762px;
+    height: 110px;
+    font-size: 48px;
+    background-color: rgba(45, 17, 20, 0.50);
+    color: white;
+    border: 5px solid #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.btn:active {
+    background-color: #2D1114;
+    border: 5px solid #2D1114;
+}

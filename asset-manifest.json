@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/FOCUS.fotoshoot/static/css/main.704938cc.css",
+    "main.js": "/FOCUS.fotoshoot/static/js/main.235e7101.js",
+    "static/js/453.8687750c.chunk.js": "/FOCUS.fotoshoot/static/js/453.8687750c.chunk.js",
+    "static/media/ArsenalSC-Bold.ttf": "/FOCUS.fotoshoot/static/media/ArsenalSC-Bold.15c45e23ade700df9c0a.ttf",
+    "static/media/ArsenalSC-Regular.ttf": "/FOCUS.fotoshoot/static/media/ArsenalSC-Regular.de6a7c35217c20b891dd.ttf",
+    "static/media/img4.svg": "/FOCUS.fotoshoot/static/media/img4.dcdb47e7a3e07a0980714e7dbc266d2a.svg",
+    "static/media/img2.svg": "/FOCUS.fotoshoot/static/media/img2.c5dda531e5f098428fd100f8377d790e.svg",
+    "static/media/img1.svg": "/FOCUS.fotoshoot/static/media/img1.b68eb4ce09db93c76f2d54af6e4eef3a.svg",
+    "static/media/img6.svg": "/FOCUS.fotoshoot/static/media/img6.f9675a32fc60e26d360979016e96337c.svg",
+    "static/media/img3.svg": "/FOCUS.fotoshoot/static/media/img3.274a9c30b4fcf064b941c7328713dfc0.svg",
+    "static/media/img5.svg": "/FOCUS.fotoshoot/static/media/img5.c78005bb07a77f438f352c4dc6d8e2c7.svg",
+    "static/media/burger.svg": "/FOCUS.fotoshoot/static/media/burger.441526dd520e6b170e17810fb5054e45.svg",
+    "index.html": "/FOCUS.fotoshoot/index.html",
+    "static/media/45.svg": "/FOCUS.fotoshoot/static/media/45.d679858563f2b770aef2.svg",
+    "main.704938cc.css.map": "/FOCUS.fotoshoot/static/css/main.704938cc.css.map",
+    "main.235e7101.js.map": "/FOCUS.fotoshoot/static/js/main.235e7101.js.map",
+    "453.8687750c.chunk.js.map": "/FOCUS.fotoshoot/static/js/453.8687750c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.704938cc.css",
+    "static/js/main.235e7101.js"
+  ]
+}
