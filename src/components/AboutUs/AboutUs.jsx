@@ -31,7 +31,7 @@ const team = [
   {
     name: 'Игорь Петров',
     desc: 'Профессионал в портретной съёмке, создаёт естественные, выразительные образы, подчёркивая индивидуальность модели.',
-    img: `${process.env.PUBLIC_URL}//img/igor.svg`
+    img: `${process.env.PUBLIC_URL}/img/igor.svg`
   }
 ];
 
