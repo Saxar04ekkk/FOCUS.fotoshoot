@@ -13,7 +13,7 @@ const Hero = () => {
 
     return (
         <div className={s.container}>
-            <img src='/img/Girl.svg' alt='фото' />
+            <img src={`${process.env.PUBLIC_URL}/img/Girl.svg`} alt="" />
             <div className={s.text}>
                 <h1>Лови моменты с профессиональной фотосессией</h1>
                 <p>Подарите себе яркие и живые фотографии для памяти и вдохновения!</p>

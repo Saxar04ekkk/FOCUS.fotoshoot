@@ -30,8 +30,8 @@ const Footer = () => {
       </div>
 
       <div className={s.footerSocial}>
-        <a href="https://t.me/Caxar04ek"><img src="/img/TG.svg" alt="1" className={s.socialIcon} /></a>
-        <a href="https://wa.me/+79232255150"><img src="/img/WA.svg" alt="2"  className={s.socialIcon} /></a>
+        <a href="https://t.me/Caxar04ek"><img src={`${process.env.PUBLIC_URL}/img/TG.svg`}  alt="1" className={s.socialIcon} /></a>
+        <a href="https://wa.me/+79232255150"><img src={`${process.env.PUBLIC_URL}/img/WA.svg`} alt="2"  className={s.socialIcon} /></a>
       </div>
     </footer>
   );

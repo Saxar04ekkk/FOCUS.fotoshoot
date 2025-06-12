@@ -5,38 +5,64 @@ import Button from '../Button/Button';
 import s from './Portfolio.module.css';
 
 const Portfolio = () => {
-  const navigate = useNavigate();
-  
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate('/contact');
-  };
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+    const handleClick = () => {
+        navigate('/contact');
+    };
 
     const sections = [
         {
             title: 'Индивидуальные портреты',
-            photos: ['/img/portrait1.svg', '/img/portrait2.svg', '/img/portrait3.svg', '/img/portrait4.svg'],
+            photos: [
+                `${process.env.PUBLIC_URL}/img/portrait1.svg`,
+                `${process.env.PUBLIC_URL}/img/portrait2.svg`,
+                `${process.env.PUBLIC_URL}/img/portrait3.svg`,
+                `${process.env.PUBLIC_URL}/img/portrait4.svg`,
+            ],
         },
         {
             title: 'Семейные фотосессии',
-            photos: ['/img/family1.svg', '/img/family2.svg', '/img/family3.svg', '/img/family4.svg'],
+            photos: [
+                `${process.env.PUBLIC_URL}/img/family1.svg`,
+                `${process.env.PUBLIC_URL}/img/family2.svg`,
+                `${process.env.PUBLIC_URL}/img/family3.svg`,
+                `${process.env.PUBLIC_URL}/img/family4.svg`,
+            ],
         },
         {
             title: 'Love story',
-            photos: ['/img/love1.svg', '/img/love2.svg', '/img/love3.svg', '/img/love4.svg'],
+            photos: [
+                `${process.env.PUBLIC_URL}/img/love1.svg`,
+                `${process.env.PUBLIC_URL}/img/love2.svg`,
+                `${process.env.PUBLIC_URL}/img/love3.svg`,
+                `${process.env.PUBLIC_URL}/img/love4.svg`,
+            ],
         },
         {
             title: 'Детские фотосессии',
-            photos: ['/img/child1.svg', '/img/child2.svg', '/img/child3.svg', '/img/child4.svg'],
+            photos: [
+                `${process.env.PUBLIC_URL}/img/child1.svg`,
+                `${process.env.PUBLIC_URL}/img/child2.svg`,
+                `${process.env.PUBLIC_URL}/img/child3.svg`,
+                `${process.env.PUBLIC_URL}/img/child4.svg`,
+            ],
         },
         {
             title: 'Выездные съёмки',
-            photos: ['/img/outdoor1.svg', '/img/outdoor2.svg', '/img/outdoor3.svg', '/img/outdoor4.svg'],
+            photos: [
+                `${process.env.PUBLIC_URL}/img/outdoor1.svg`,
+                `${process.env.PUBLIC_URL}/img/outdoor2.svg`,
+                `${process.env.PUBLIC_URL}/img/outdoor3.svg`,
+                `${process.env.PUBLIC_URL}/img/outdoor4.svg`,
+            ],
         },
     ];
+
 
     return (
         <div className={s.portfolio}>
@@ -56,7 +82,7 @@ const Portfolio = () => {
                 <p className={s.ctaText}>
                     Если вам понравились наши работы, мы с радостью поможем воплотить вашу идею в жизнь и создадим фотографии, которые будут радовать вас!
                 </p>
-                <Button className={s.btn} text="Записаться на фотосессию"  onClick={handleClick} />
+                <Button className={s.btn} text="Записаться на фотосессию" onClick={handleClick} />
             </div>
         </div>
     );
