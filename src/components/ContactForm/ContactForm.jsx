@@ -3,7 +3,6 @@ import s from './ContactForm.module.css';
 import Button from '../Button/Button';
 import CustomSelect from './CustomSelect';
 
-
 const ContactForm = () => {
     const [fio, setFio] = useState('');
     const [phone, setPhone] = useState('');
@@ -12,7 +11,9 @@ const ContactForm = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const handleFioChange = (e) => {
-        if (/^[а-яё\s]*$/i.test(e.target.value) || e.target.value === '') setFio(e.target.value);
+        if (/^[а-яё\s]*$/i.test(e.target.value) || e.target.value === '') {
+            setFio(e.target.value);
+        }
     };
 
     const handlePhoneChange = (e) => {
@@ -33,7 +34,8 @@ const ContactForm = () => {
         }
 
         try {
-            const res = await fetch('http://localhost:3001/send', {
+            const res = await fetch('https://your-server.onrender.com/send', {
+
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ fio, phone, sessionType })
@@ -59,8 +61,9 @@ const ContactForm = () => {
     return (
         <section className={s.contact}>
             <h2 className={s.title}>Понравились наши фотосессии?</h2>
-            <p className={s.subtitle}>Оставьте заявку — и мы свяжемся с вами, чтобы обсудить все детали вашей уникальной фотосессии.
-</p>
+            <p className={s.subtitle}>
+                Оставьте заявку — и мы свяжемся с вами, чтобы обсудить все детали вашей уникальной фотосессии.
+            </p>
             <form className={s.form} onSubmit={handleSubmit}>
                 <input
                     type="text"
