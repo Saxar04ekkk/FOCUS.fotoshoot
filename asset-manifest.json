@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/FOCUS.fotoshoot/static/css/main.704938cc.css",
-    "main.js": "/FOCUS.fotoshoot/static/js/main.928b09a5.js",
+    "main.js": "/FOCUS.fotoshoot/static/js/main.38624a4f.js",
     "static/js/453.8687750c.chunk.js": "/FOCUS.fotoshoot/static/js/453.8687750c.chunk.js",
     "static/media/ArsenalSC-Bold.ttf": "/FOCUS.fotoshoot/static/media/ArsenalSC-Bold.15c45e23ade700df9c0a.ttf",
     "static/media/ArsenalSC-Regular.ttf": "/FOCUS.fotoshoot/static/media/ArsenalSC-Regular.de6a7c35217c20b891dd.ttf",
@@ -15,11 +15,11 @@
     "index.html": "/FOCUS.fotoshoot/index.html",
     "static/media/45.svg": "/FOCUS.fotoshoot/static/media/45.d679858563f2b770aef2.svg",
     "main.704938cc.css.map": "/FOCUS.fotoshoot/static/css/main.704938cc.css.map",
-    "main.928b09a5.js.map": "/FOCUS.fotoshoot/static/js/main.928b09a5.js.map",
+    "main.38624a4f.js.map": "/FOCUS.fotoshoot/static/js/main.38624a4f.js.map",
     "453.8687750c.chunk.js.map": "/FOCUS.fotoshoot/static/js/453.8687750c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.704938cc.css",
-    "static/js/main.928b09a5.js"
+    "static/js/main.38624a4f.js"
   ]
 }
