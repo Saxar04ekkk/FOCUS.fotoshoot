@@ -17,7 +17,7 @@ const App = () => {
         <Header />
         <div className='site-wrapper-content'>
           <Routes>
-            <Route path="/" element={<div>Главная страница</div>} />
+            <Route path="/" element={<PhotoSession/>} />
             <Route path="/photosession" element={<PhotoSession />} />
             <Route path="/aboutus" element={<AboutUs />} />
             <Route path="/services" element={<Services />} />

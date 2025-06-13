@@ -26,36 +26,19 @@ const ContactForm = () => {
         setPhone(formatted.trim());
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
 
         if (!fio || !phone || !sessionType || !agreed) {
             return alert('Заполните все поля и согласитесь');
         }
 
-        try {
-            const res = await fetch('https://your-server.onrender.com/send', {
-
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ fio, phone, sessionType })
-            });
-
-            const data = await res.json();
-
-            if (res.ok) {
-                setIsModalOpen(true);
-                setFio('');
-                setPhone('');
-                setSessionType('');
-                setAgreed(false);
-            } else {
-                alert(data.message || 'Ошибка сервера');
-            }
-        } catch (err) {
-            alert('Ошибка при отправке заявки. Проверьте сервер и сеть.');
-            console.error(err);
-        }
+        // Здесь больше нет отправки на сервер
+        setIsModalOpen(true);
+        setFio('');
+        setPhone('');
+        setSessionType('');
+        setAgreed(false);
     };
 
     return (
@@ -98,7 +81,7 @@ const ContactForm = () => {
             {isModalOpen && (
                 <div className={s.modalOverlay}>
                     <div className={s.modal}>
-                        <p>Заявка оставлена! <br /> Мы свяжемся с вами в ближайшее время.</p>
+                        <p>Заявка оставлена! <br /> Мы свяжемся с вам  в ближайшее время.</p>
                         <button onClick={() => setIsModalOpen(false)} className={s.modalButton}>Закрыть</button>
                     </div>
                 </div>
@@ -108,3 +91,4 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+
