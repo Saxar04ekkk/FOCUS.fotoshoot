@@ -33,7 +33,6 @@ const ContactForm = () => {
             return alert('Заполните все поля и согласитесь');
         }
 
-        // Здесь больше нет отправки на сервер
         setIsModalOpen(true);
         setFio('');
         setPhone('');
